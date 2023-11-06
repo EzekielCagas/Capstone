@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width", initial-scale="0.1" />
+        <link rel="stylesheet" href="style.css">
+        <title>Dressire</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="group">
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">MEN</a></li>
+                    <li><a href="#">WOMEN</a></li>
+                    <li><a href="#">COLLECTIONS</a>
+                        <ul class="dropdown">
+                            <li><a href="#">FOR MEN</a>
+                                <ul class="dropdown2">
+                                    <li><a href="#">SUIT</a></li>
+                                    <li><a href="#">TUXEDO</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">FOR WOMEN</a>
+                                <ul class="dropdown2">
+                                    <li><a href="#">FILIPIÑA</a></li>
+                                    <li><a href="#">GOWN</a></li>
+                                    <li><a href="#">PARTY DRESS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">KIDS</a>
+                                <ul class="dropdown2">
+                                    <li><a href="#">FORMAL WEAR</a></li>
+                                    <li><a href="#">PARTY DRESS</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SIZE</a>
+                                <ul class="dropdown2">
+                                    <li><a href="#">TALL MEN</a></li>
+                                    <li><a href="#">TALL WOMAN</a></li>
+                                    <li><a href="#">TEEN MEN</a></li>
+                                    <li><a href="#">TEEN WOMAN</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">COLOR</a>
+                                <ul class="dropdown2">
+                                    <li><a href="#">WARM TONE</a></li>
+                                    <li><a href="#">COLD TONE</a></li>
+                                    <li><a href="#">NEUTRAL TONE</a></li>
+                                    <li><a href="#">PASTEL</a></li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                    <li><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline"
+                        class="searchBtn"></ion-icon>
+                        <ion-icon name="close-outline" 
+                        class="closeBtn"></ion-icon> 
+                    </span>
+                </div>
+                <div class="searchBox">
+                    <input type="text" placeholder="Search here">
+                </div>
+        </header>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">            
+        </script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+        </script>
+        
+        <script>
+            let searchBtn = document.querySelector('.searchBtn');
+            let closeBtn = document.querySelector('.closeBtn');
+            let searchBox = document.querySelector('.searchBox');
+            
+            searchBtn.onclick = function(){
+                searchBox.classList.add('active');
+                closeBtn.classList.add('active');
+                searchBtn.classList.add('active');
+            }
+            closeBtn.onclick = function(){
+                searchBox.classList.remove('active');
+                closeBtn.onclick.remove('active');
+                searchBtn.classList.remove('active');
+            }
+        </script> 
+
+    </body>
+
+</html>
