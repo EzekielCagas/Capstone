@@ -58,6 +58,12 @@
                     <li><a href="#">ABOUT</a></li>
                 </ul>
             </div>
+                <div class="account">
+                    <span class="act">
+                        <ion-icon name="person-circle-outline"
+                        class="accountBtn"></ion-icon>
+                    </span>
+                </div>
                 <div class="search">
                     <span class="icon">
                         <ion-icon name="search-outline"
@@ -88,11 +94,16 @@
             }
             closeBtn.onclick = function(){
                 searchBox.classList.remove('active');
-                closeBtn.onclick.remove('active');
+                closeBtn.classList.remove('active');
                 searchBtn.classList.remove('active');
             }
         </script> 
+        <div class="bg-dress"></div>
 
+        <h1>DRESSIRE</h1>
+        <p>Browsing dresses has nevever been easier.
+            With Dressire we give you the dress that you dessire.
+        </p>
     </body>
 
 </html>

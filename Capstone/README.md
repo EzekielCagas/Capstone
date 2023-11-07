@@ -7,3 +7,6 @@
 
 ### 06/11/23
 - Added Application version 
+
+## 07/11/23
+-updated header, added account btn
