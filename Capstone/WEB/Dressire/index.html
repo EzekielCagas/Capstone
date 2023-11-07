@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <style>
-        @font-face {
-            font-family: 'FashionWacks';
-            src: url(FashionWacks-Regular.otf);
-        }
-    </style>
-
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width", initial-scale="0.1" />
@@ -17,9 +9,16 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
 
+
     </head>
     <body>
         <header>
+            <div class="account">
+                <span class="act">
+                    <ion-icon name="person-circle-outline"
+                    class="accountBtn"></ion-icon>
+                </span>
+            </div>
             <div class="group">
                 <ul class="menu">
                     <li><a href="#">HOME</a></li>
@@ -66,12 +65,7 @@
                     <li><a href="#">ABOUT</a></li>
                 </ul>
             </div>
-                <div class="account">
-                    <span class="act">
-                        <ion-icon name="person-circle-outline"
-                        class="accountBtn"></ion-icon>
-                    </span>
-                </div>
+                
                 <div class="search">
                     <span class="icon">
                         <ion-icon name="search-outline"
@@ -106,16 +100,42 @@
                 searchBtn.classList.remove('active');
             }
         </script> 
-       <!--
         <div class="cover">
-            <img src="img/bg_dress.png">
+            <img class="cover-image" src="img/bg_dress.png" alt="background dress">
             <div class="cover-text">
                 <h4>DRES</h4>
             </div>
             <div class="cover-text2">
                 <h4>sire</h4>
             </div>
-        </div>-->
+        </div>
+        <div class="motto">
+            <h3>Browsing gowns has never been easier.<br>
+                Giving you the dress that you<br>
+                desire right at your screen.
+            </h3>
+        </div>
+        
+        <a class="Browse" href="#">Browse</a>
+
+        <div class="highlight">
+            <h1>Product Highlight</h1>
+            <div class="img">
+                <img src="img/red_dress.png">
+            </div>
+            <div class="img">
+                <img src="img/party_2.png">
+            </div>
+            <div class="img">
+                <img src="img/blazer.png">
+            </div>
+            <div class="img">
+                <img src="img/party_1.png">
+            </div>
+            <div class="img">
+                <img src="img/wizard.png">
+            </div>
+        </div>
 
     </body>
 
