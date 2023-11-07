@@ -19,17 +19,51 @@ body{
         #697793 100%
     );
 
-    .bg-dress{
+    .cover img{
         width: 819px;
         height: 940px;
-        background-image: url(img/bg_dress.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        margin-left: 210px;
+        margin-top: 10%;
+        margin-left: 222px;
         margin-right: auto;
-        padding-top: 200px;
     }
+
+    .cover{
+        position: relative;
+    }
+
+
+    .cover-text{
+        position: absolute;
+        top: 5%;
+        color: #697793;
+        padding: 10px;
+    }
+    .cover-text h4{
+        font-size: 150px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-left: 235px;
+        margin-right: auto;
+        font-family: 'FashionWacks', 'sans-serif';
+    }
+    .cover-text2{
+        position: absolute;
+        top: 5%;
+        color: #fff;
+        padding: 10px;
+    }
+    .cover-text2 h4{
+        font-size: 150px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-left: 630px;
+        margin-right: auto;
+        font-family: 'FashionWacks', 'sans-serif';
+    }
+
 
     .h1{
         position: absolute;
