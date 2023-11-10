@@ -9,11 +9,11 @@
     <TextView
         android:id="@+id/product"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="669dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="23dp"
         android:fontFamily="@font/frank"
         android:text="Product"
         android:textSize="30sp"
@@ -21,50 +21,55 @@
         tools:layout_editor_absoluteY="43dp" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="633dp"
+        android:id="@+id/highlight"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/product"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="1dp"
         android:fontFamily="@font/frank"
         android:text="Highlight"
         android:textSize="30sp"
         android:visibility="visible" />
 
-    <ImageView
-        android:layout_width="192dp"
-        android:layout_height="221dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="110dp"
+    <ImageButton
+        android:id="@+id/h1"
+        android:layout_width="190dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/highlight"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="-18dp"
         android:layout_marginBottom="399dp"
-        android:cropToPadding="true"
-        android:src="@drawable/h1" />
+        android:layout_toStartOf="@+id/rightBtn"
+        android:layout_toEndOf="@+id/leftBtn"
+        android:background="@drawable/h1"
+        android:cropToPadding="true" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <ImageButton
+        android:id="@+id/rightBtn"
         android:layout_width="71dp"
-        android:layout_height="85dp"
+        android:layout_height="71dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="470dp"
-        android:src="@drawable/right" />
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="39dp"
+        android:background="@drawable/right" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <ImageButton
+        android:id="@+id/leftBtn"
         android:layout_width="71dp"
-        android:layout_height="85dp"
+        android:layout_height="71dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="46dp"
-        android:layout_marginBottom="470dp"
-        android:src="@drawable/left" />
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="175dp"
+        android:background="@drawable/left" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/WColl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -75,35 +80,38 @@
         android:text="Women Collection"
         android:textSize="25sp" />
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="128dp"
+    <ImageButton
+        android:id="@+id/dress1"
+        android:layout_width="110dp"
         android:layout_height="128dp"
+        android:layout_below="@+id/WColl"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="195dp"
-        android:src="@drawable/dress1" />
+        android:layout_marginTop="-323dp"
+        android:background="@drawable/dress1" />
 
-    <ImageView
-        android:id="@+id/imageView7"
+    <ImageButton
+        android:id="@+id/dress2"
+        android:layout_width="110dp"
+        android:layout_height="128dp"
+        android:layout_below="@+id/WColl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-323dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/dress3"
+        android:layout_toEndOf="@+id/dress1"
+        android:background="@drawable/dress2" />
+
+    <ImageButton
+        android:id="@+id/dress3"
         android:layout_width="128dp"
         android:layout_height="128dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="143dp"
-        android:layout_marginBottom="194dp"
-        android:src="@drawable/dress2" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
+        android:layout_below="@+id/WColl"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="-323dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="193dp"
-        android:src="@drawable/dress3" />
+        android:background="@drawable/dress3" />
 
     <TextView
         android:id="@+id/textView7"
@@ -117,35 +125,37 @@
         android:text="Men Collection"
         android:textSize="25sp" />
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="128dp"
+    <ImageButton
+        android:id="@+id/m1"
+        android:layout_width="110dp"
         android:layout_height="128dp"
+        android:layout_below="@+id/textView7"
         android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="11dp"
-        android:src="@drawable/m1" />
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/m1" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="128dp"
+    <ImageButton
+        android:id="@+id/m2"
+        android:layout_width="110dp"
         android:layout_height="128dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="143dp"
-        android:layout_marginBottom="10dp"
-        android:src="@drawable/m2" />
+        android:layout_below="@+id/textView7"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-140dp"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/m3"
+        android:layout_toEndOf="@+id/m1"
+        android:background="@drawable/m2" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="128dp"
+    <ImageButton
+        android:id="@+id/m3"
+        android:layout_width="110dp"
         android:layout_height="128dp"
+        android:layout_below="@+id/textView7"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-140dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/m3" />
+        android:background="@drawable/m3" />
 
 
 </RelativeLayout>
