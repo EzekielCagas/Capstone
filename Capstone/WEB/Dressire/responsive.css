@@ -1,0 +1,27 @@
+.container {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:.5rem;
+    padding-right:.5rem;
+    }
+    /* Xs*/
+    @media (min-width: 475px) {
+    .container{
+    Max-width: 475px;}
+    }
+    /* sm*/
+    @media (min-width: 640px) {
+        .container{
+    Max-width: 640px;}
+    }
+    /* md*/
+    @media (min-width: 768px) {
+    .container{
+    Max-width: 768px;}
+    }
+    /* lg*/
+    @media (min-width: 1024px) {
+    .container{
+    Max-width: 1024px;}
+    }
